@@ -1,0 +1,23 @@
+let abcabcba be a0,b1,c2,a3,b4,c5,b6,a7
+for a0, we ask, any future a's?
+  points to a3, a7
+    ->  moves to b1
+
+    asks a1, any future b's
+      points to b4, b6
+
+        -> moves to c2
+        asks b4, any future c's
+          points to c5
+
+            -> moves to a3
+            asks c5, any future a's
+              points to a7
+
+              -> moves to b4
+                asks a7, any future b's
+                  no.
+
+
+    asks a at 1, any future b's
+      points to b at 4, 6
