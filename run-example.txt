@@ -1,23 +1,50 @@
 let abcabcba be a0,b1,c2,a3,b4,c5,b6,a7
-for a0, we ask, any future a's?
+for a0, we ask, any future a's? in "_bcabcba"
   points to a3, a7
-    ->  moves to b1
+    a,a
+    a,a
 
-    asks a1, any future b's
+    ->  moves to b1, __c,abcba 
+    asks a3, any future b's
+
       points to b4, b6
+        ab,ab
+        ab,ab
 
-        -> moves to c2
+        -> moves to c2 ___,a,bcba
         asks b4, any future c's
+          
           points to c5
+            abc,abc
 
-            -> moves to a3
-            asks c5, any future a's
-              points to a7
+            can't move further, left is exhausted
 
-              -> moves to b4
-                asks a7, any future b's
-                  no.
+        -> moves to c2 ___,abc,ba
+        asks b6, any future c's
+          None found
 
+    ->  moves to b1, __cabcb,a
+    asks a7, any future b's in __cabcb,a
+      None found
 
-    asks a at 1, any future b's
-      points to b at 4, 6
+for b1, we ask, any future b's? in "__cabcba"
+  points to b4, b6
+    b,b
+    b,b
+
+    -> moves to c2, ___a,bcba
+    asks b4, any future c's
+
+      points to c5
+        bc,bc
+
+        -> moves to a3 ____,b,cba
+        asks c5, any future a's
+
+        points to a7
+          bca,bca
+
+          can't move further, left is exhausted
+
+    -> moves to c2, ___abc,ba
+    asks b6
